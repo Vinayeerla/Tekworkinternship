@@ -1,0 +1,38 @@
+start
+step1: enter the website from the browser
+step2: display"welcome to swiggy"
+step3: display"login with your user_name and password"
+step4:read the login details from the user
+step5:if(login details are matched)
+       {
+        display "swiggy provide two ways of search"
+        1.search by restaurant
+        2.search by food
+         read choice from user
+         if(search by restaurant == 1)
+           {
+            display"please choose the restaurant"
+             1.Deepika restaurant
+             2.empire House
+             3.zaatar mandi
+            }
+             read choice from the user
+              if(search by food == 1)
+                {
+                  display"please choose the food "
+                   1.chicken biryani    ..... 350
+                   2.chicken lolipop    ..... 200
+                   3.hyrabadi biryani   ..... 400
+                }
+                 read choice from user
+                   if(order is taken)
+                      {
+                        display" your taotal order amount with gst  is ... "
+                        display total amount = orderamount + (orderamount*7)/100
+                       } 
+       }
+       else 
+          {
+           display "please sign up with your e-mail and passowrd"
+          }
+end

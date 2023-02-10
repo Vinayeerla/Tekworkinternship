@@ -1,0 +1,10 @@
+// Algorithm to find area of cricle
+
+START
+
+step1: read radius 
+step2: take pi=3.14
+step3: res = pi*radius*radius
+step4: Display res
+
+END

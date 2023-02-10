@@ -1,0 +1,50 @@
+start 
+step1: customer visit to the restaurant
+step2: receiving customer and wishing them
+step3: read reservation
+step4: if(reservation==1)
+        {
+          Take customer to that reserved table
+        }
+        else
+            check available tables
+            if (table is available)
+              {
+              take customer to that table
+               }
+            else 
+               {
+              waiter request to the customer please wait for some time
+               }
+step5: select the mennu which contains food items with prices as
+     
+         *chicken chilly dry/gry ...... 130/160
+         *chicken tandoori half/full .... 180/250
+
+step6: read choice from users
+       if(item is available)
+        {
+          waiter take order from customer
+         }
+         else 
+            waiter says sorry sir this item is not available right now      
+step7:if(chef receive the order)
+       {
+        chef will start preparing the order 
+       }
+step 8: if (chef prepared the food )
+           waiter will serve the food
+            if (customer orders other items)
+              {
+               waiter will take that order and serve
+               }
+               else waiter will finally serve some deserts
+step 9: if (customer completed having deserts)
+            waiter provide's the bill
+        if (customer give the bill along with tip)
+         {
+           waiter pay the bill and take the tip
+         }
+         else waiter pay the bill only
+         }
+ step 10: waiter says thanks for comming

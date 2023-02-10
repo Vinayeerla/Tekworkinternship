@@ -1,0 +1,80 @@
+START
+
+step1: Display "Welcome to Bank of India"
+step2:Display"Please insert your card"
+step3:Read the card from user
+step4:Display"Your card is reading,Please don't remove ur card"
+step5:if(card is acceptable)
+        {​​​​​​​
+        Display"select the language " 
+        1.English
+        2.Hindi  
+        3.Telugu
+        read language from user
+        }​​​​​​​
+        else
+          {​​​​​​​
+          Display"Your card is not valid"
+          }​​​​​​
+step6: select the user account  "Saving","KCC" and "current"
+step7: read choice from user
+step8: Display Menu as
+       1.Withdrawal
+       2.Deposit
+       3.Balance Enquiry
+step9:Read n
+step10:if(n=="Withdrawal")
+         { 
+          read amount
+           if(amount<=actual amount)
+           {
+            Display " Please Enter amount.Cash Available Rs100,Rs200 and Rs500 "
+           }
+            if(amount % 100!=0 or amount % 200!=0 or amount % 500!=0)
+              {
+               Display "YOu can only withdraw a multiple of 100,200 and 500"
+               }
+              else 
+                 {
+                  Dispaly "collect your cash "
+                  Display " Remove your card "
+                  Display " Available Balance "
+                  Display" Thank you for using Bank of India "
+                 }
+            else
+             {
+              Display " there is no sufficient funds "
+              }
+       else if (n=="Deposit")
+           {
+          read amount
+            if (amount % 100==0 or amount % 200==0 or amount % 500==0)
+            {
+             Display "Enter your pin number"
+             read pin number
+             if (pin number is valid)
+             {
+             Display "Deposit  your cash"
+             Display "Transaction Successful" 
+             Display "remove your card "
+             }
+             else
+                { 
+                 Display" You can only Deposit multiples of 100,200 and 500"
+                }
+        else if(n=="Balance Enquiry")
+             {
+              Display "Enter your pin number"
+              read pin number
+              if (pin number is valid)
+                {
+                 Display "Available Balance"
+                 Display "Thank you"
+                 }
+               else
+                  {
+                   Display "please enter your valid pin number"
+                   }
+step11: Display " Have a nice day " 
+
+END

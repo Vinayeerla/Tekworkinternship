@@ -1,0 +1,31 @@
+START
+
+step1: Display " login with your User_name and password"
+step2: Read the login infomation from the user
+step3: if(login details are matched)
+         {
+          Display "Search Books"
+          read book_status
+          if(book_status is Available)
+            {
+             Display "Book name"
+             Display "book author"
+             Display "Book price"
+             Display "book validity date"
+          else 
+              {
+               Display "It is not Available Right now"
+              }
+              
+step4: select the returned to boook              
+       read validity_date
+       if(validity_date > book validity date)
+       {
+        Display "unsuccessfully returned"
+        Display "pay fine for the delay"
+       }
+        else
+            {
+              Display "successfully returned"
+            }
+       
