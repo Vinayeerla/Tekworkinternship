@@ -1,0 +1,8 @@
+start
+step1: read  num
+step2: if(num%5==0 && num%11==0)
+            display " divisible by 5 and 11
+          else
+              display "not divisible by 5 and 11"
+                        
+end

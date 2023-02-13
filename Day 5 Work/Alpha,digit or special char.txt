@@ -1,0 +1,10 @@
+start
+step1: read name;
+step2: if(name>='A' && name<='Z')       
+               display " ch is alphabet"
+       else if("name>=0 && name<=9)
+             display " ch is a digit "
+         else
+              display " ch is special character"
+       
+end

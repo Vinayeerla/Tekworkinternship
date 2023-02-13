@@ -1,0 +1,10 @@
+start
+step1:read num
+step2: if( n<0)
+          display  " num is negative"
+        else if(num==0)
+             display " num is zero"
+        else
+           display " num is positive"
+        }
+end

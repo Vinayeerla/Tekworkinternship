@@ -1,0 +1,24 @@
+start
+step1: read sal, grs, hra,da
+step2: if(sal<=10000)
+           {
+              da=sal*20/100
+             hra=sal*80/100
+           grs=sal+da+hra
+            display  grs
+           }
+       else  if(sal<=20000 && sal>=10000)
+          {
+             da=sal*25/100;
+            har=sal*90/100;
+           grs= sal+da+hra
+           display  grs
+           }
+       else if(sal>20000)
+          {
+            da=sal*30/100;
+            hra=sal*95/100;
+            gross=sal+da+hra
+            display  grs
+           }
+end          
