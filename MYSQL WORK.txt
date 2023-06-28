@@ -1,0 +1,131 @@
+Create a table called "Employees" with the following columns:
+
+employee_id as the primary key
+first_name not null
+last_name not null
+email unique
+hire_date not null with a default value of the current date
+department_id not null with a default value of 0
+
+CREATE DATABASE Work;
+
+use Work;
+
+create table employee(employee_id int primary key, first_name varchar(20) not null, last_name varchar(20) not null, email varchar(20) unique, hire_date date default "2023-06-28", department_id int not null default 0);
+
+============================================================================================
+
+Create a table called "Books" with the following columns:
+
+book_id as the primary key
+title not null
+author not null
+publication_date not null with a default value of '1900-01-01'
+price not null
+quantity not null with a default value of 0
+
+create table Books(book_id int primary key, title varchar(20) not null, author varchar(20) not null, publication_date date not null default "1900-01-01",price int not null, quantity int not null default 0);
+
+=============================================================================================
+Create a table called "Orders" with the following columns:
+
+order_id as the primary key
+customer_id not null
+order_date not null with a default value of the current date
+total_amount not null
+status not null with a default value of 'Pending'
+
+
+ CREATE TABLE orders(order_id int primary key,customer_id int not null, order_date date not null default "2023-06-28", total_amount int not null, status varchar(20) not null default "pending");
+
+===========================================================================================
+
+Create a table called "Students" with the following columns:
+
+student_id as the primary key
+first_name not null
+last_name not null
+date_of_birth not null
+email unique
+enrollment_status not null with a default value of 'Active'
+
+
+ CREATE TABLE students(student_id int primary key,first_name varchar(20) not null, last_name varchar(20) not null, email varchar(20) unique, date_of_birth date not null,enrollment_status varchar(20) not null default "Active");
+
+===========================================================================================
+
+Create a table called "Countries" with the following columns:
+
+country_id as the primary key
+country_name not null
+population not null
+capital_city
+area not null with a default value of 0
+
+CREATE TABLE countries(country_id int primary key,country_name varcha
+r(20) not null,population long not null,capital_city varchar(20) not null,ar
+ea int not null default 0);
+
+===========================================================================================
+ALTER Command: 
+a. You have a table called "Customers" with the following columns:
+
+customer_id (integer) as the primary key
+first_name (varchar)
+last_name (varchar)
+email (varchar) unique
+Add a column named "phone_number" with the data type varchar(15) and make it not null.
+
+
+CREATE TABLE Customer(customer_id int primary key,first_name varchar(20), last_name varchar(20), email varchar(20) unique);
+Query OK, 0 rows affected (0.03 sec)
+
+mysql> ALTER TABLE Customer ADD COLUMN phone_number varchar(15) not null;
+Query OK, 0 rows affected (0.02 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+===========================================================================================
+b. employee_id (integer) as the primary key
+first_name (varchar)
+last_name (varchar)
+hire_date (date)
+Change the data type of the "hire_date" column from date to datetime.
+
+
+CREATE TABLE employees(employee_id int primary key,first_name varchar
+(20),last_name varchar(20),hire_date date);
+Query OK, 0 rows affected (0.02 sec)
+
+mysql> ALTER TABLE employees MODIFY COLUMN hire_date datetime;
+Query OK, 0 rows affected (0.05 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+
+===========================================================================================
+
+DROP Command: a. You have a table called "Products" that is no longer needed. Your assignment is to drop the "Products" table from the database.
+
+DROP TABLE Products;
+
+===========================================================================================
+b.You have accidentally created a table called "TempTable" and want to remove it. Your assignment is to drop the "TempTable" from the database.
+
+DROP TABLE TempTable;
+
+===========================================================================================
+
+TRUNCATE Command: a. You have a table called "Orders" that contains a large number of records. Your assignment is to truncate the "Orders" table, removing all records while keeping the table structure intact.
+
+
+TRUNCATE TABLE Orders;
+
+
+===========================================================================================
+
+b. You have a table called "Logs" that is used to store log entries. Your assignment is to truncate the "Logs" table, removing all log entries.
+
+
+TRUNCATE TABLE Logs;
+
+===========================================================================================
+
